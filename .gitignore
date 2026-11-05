@@ -1,11 +1,9 @@
 *
-<<<<<<< HEAD
 !.gitignore
-=======
-!.gitignore
+!README.md
+
 !hypr/
 !hypr/**
 
 
 .vscode
->>>>>>> hyprland-conf-to-lua
