@@ -6,12 +6,6 @@
 -- Refer to the wiki for more information.
 -- https://wiki.hypr.land/configuring/
 
--------------------
----- AUTOSTART ----
--------------------
-
-require("common.autostart")
-
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
@@ -40,46 +34,17 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 -- hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 
+-------------------
+---- AUTOSTART ----
+-------------------
+
+require("common.autostart")
+
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
 
 require("common.look-and-feel")
-
----------------
----- INPUT ----
----------------
-
-hl.config({
-    input = {
-        kb_layout  = "fi",
-        kb_variant = "",
-        kb_model   = "",
-        kb_options = "",
-        kb_rules   = "",
-
-        follow_mouse = 1,
-
-        sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
-
-        touchpad = {
-            natural_scroll = false,
-        },
-    },
-})
-
-hl.gesture({
-    fingers = 3,
-    direction = "horizontal",
-    action = "workspace"
-})
-
--- Example per-device config
--- See https://wiki.hypr.land/configuring/core/devices/ for more
-hl.device({
-    name        = "epic-mouse-v1",
-    sensitivity = -0.5,
-})
 
 ---------------------
 ---- KEYBINDINGS ----
