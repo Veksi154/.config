@@ -28,6 +28,7 @@ hl.config({
         kb_model   = "",
         kb_options = "",
         kb_rules   = "",
+        numlock_by_default = true,
 
         follow_mouse = 1,
 
@@ -51,3 +52,10 @@ hl.device({
     name        = "epic-mouse-v1",
     sensitivity = -0.5,
 })
+
+-------------
+---- ENV ----
+-------------
+
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("GTK_THEME", "Breeze Dark")
